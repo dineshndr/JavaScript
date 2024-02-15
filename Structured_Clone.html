@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>hello</title>
+<script> 
+
+const user = {
+name:"John",
+size: {
+	height:120,
+	width:244,
+	breadth:232
+}
+}
+<!--copying into clone object using Structured clone-->
+const clone=structuredClone(user)
+clone.size.height = 34
+alert(clone.size.height) <!-- 34-->
+alert(user.size.height) <!--120-->
+</script>
+</head>
+<body>
+
+</body>			
+
+</html>

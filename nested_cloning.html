@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>hello</title>
+<script> 
+
+<!--cloning using object-assign-->
+const user = {
+name:"John",
+size: {
+	height:120,
+	width:244,
+	breadth:232
+}
+}
+<!--copying into clone object using for loop-->
+const clone={};
+for (let key in user) {
+	
+	if(typeof key ==Object)
+		for(let nestedkey in key)
+                {
+		clone[key][nestedkey] = user[key][nestedkey]
+		}
+	else clone[key] = user[key];
+}
+clone.size.height = 43 
+<!-- the above statement chagnes the nested value of height in both clone nad user-->
+clone.name="peter"
+alert(clone.size.height) <!-- 43-->
+alert(user.size.height) <!--43-->
+alert(clone.name)
+alert(user.name)
+</script>
+</head>
+<body>
+
+</body>
+
+</html>

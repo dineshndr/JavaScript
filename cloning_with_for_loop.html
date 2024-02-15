@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>hello</title>
+<script> 
+
+<!--cloning using for loop-->
+const user = {
+name:"John",
+age:30
+}
+const clone = {};
+for(let key in user) {
+	clone[key] = user[key]
+}
+clone.name ="Pete"
+alert(user.name)
+	
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+
+</html>

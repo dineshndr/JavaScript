@@ -1,0 +1,24 @@
+<!-- Obj to primitives override and by default toString takes place if valueOf and Symbol.toPrimtive not works-->
+
+<html>
+<head>
+<title> hello</title>
+<script>
+let user = {
+name:"Dinesh",
+age: 25,
+valueOf() {
+    return this.age*2;
+},
+ toString() {
+    return this.name+this.name;
+
+}
+}
+alert(user.valueOf())
+alert(user.toString())
+</script>
+</head>
+<body>
+</body>
+</html>

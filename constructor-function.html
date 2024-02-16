@@ -1,0 +1,19 @@
+<!-- Constructor  in Java script is used to initialize the object properties in a function or method
+Every time we create objectusing 'new' operator , it modifies the this operator and gives us the output
+Given below is an example-->
+<html>
+<head>
+<title> hello</title>
+<script>
+function sayhi(name) {
+this.name = name
+this.age = 25
+alert(this.name)
+};
+new sayhi("dinesh") <!-- print Dinesh-->
+new sayhi("jagan") <!-- print jagan-->
+</script>
+</head>
+<body>
+</body>
+</html>

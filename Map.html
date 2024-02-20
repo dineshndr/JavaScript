@@ -1,0 +1,25 @@
+<!--Map is used to store values in key and value pairs.
+It can store object as key. This is the main difference between object where we can use string as a key.
+new Map() – creates the map.
+map.set(key, value) – stores the value by the key.
+map.get(key) – returns the value by the key, undefined if key doesn’t exist in map.
+map.has(key) – returns true if the key exists, false otherwise.
+map.delete(key) – removes the element (the key/value pair) by the key.
+map.clear() – removes everything from the map.
+map.size – returns the current element count. -->
+<html>
+<head>
+<title> hello</title>
+<script>
+let age_of = {name:"john"};
+let myMap = new Map();
+myMap.set(age_of,123);
+myMap.set(name,"dinesh");
+alert(myMap.get(age_of.name));<!-- undefined-->
+let newObj = Object.fromEntries(myMap);
+alert(newObj.name);
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!--WeakSet behaves similarly:
+
+It is analogous to Set, but we may only add objects to WeakSet (not primitives).
+An object exists in the set while it is reachable from somewhere else.
+Like Set, it supports add, has and delete, but not size, keys(),values,iterations and no iterations.-->
+<html>
+<head>
+<title>hello</title>
+<script> 
+const new_set = new WeakSet();
+let user = {name:"dinesh",age:25}
+new_set.add(user)
+alert(new_set.get(user));
+const new_map = new WeakMap();
+let next_user = {name:"ashok",age:30}
+
+new_map.set(next_user);
+alert(new_map.next_user);
+</script>
+</head>
+<body>
+
+</body>			
+
+</html>

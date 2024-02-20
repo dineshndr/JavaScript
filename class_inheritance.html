@@ -1,0 +1,23 @@
+
+<!--__proto__ is a property by default and prototype is constructor property for functions-->
+<html>
+<head>
+<title>hello</title>
+<script> 
+class Animal{
+constructor() {return this.sayHi()}
+sayHi() {alert("animal");}
+}
+class dog extends Animal {
+constructor() {super();return this.sayHi()}
+sayHi() {alert("dog");}
+ }
+new Animal();
+new dog();
+</script>
+</head>
+<body>
+
+</body>			
+
+</html>

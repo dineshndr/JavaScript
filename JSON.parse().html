@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>hello</title>
+<script> 
+let person ={
+name:"Dinesh",
+age:25,
+shirt:[{color:"red", size:"L",
+toJSON(){return this.size="Large"}}]   
+}
+let newstr = JSON.stringify(person);
+alert(typeof JSON.parse(newstr));
+
+</script>
+</head>
+<body>
+
+</body>			
+
+</html>

@@ -1,0 +1,41 @@
+<!--let user = {
+  name: "John",
+  age: 30,
+
+  toString() {
+    return `{name: "${this.name}", age: ${this.age}}`;
+  }
+};
+
+alert(user); // {name: "John", age: 30}
+…But in the process of development, new properties are added, old properties are renamed and removed. Updating such toString every time can become a pain. We could try to loop over properties in it, but what if the object is complex and has nested objects in properties? We’d need to implement their conversion as well.
+
+Luckily, there’s no need to write the code to handle all this. The task has been solved already.
+
+JSON full syntax
+
+JSON.stringify(ObjName,[replacer],space);
+Doesnot stringify nested objects if not specified.
+-->
+
+<html>
+<head>
+<title>hello</title>
+<script> 
+
+let person ={
+name:"Dinesh",
+age:25,
+shirt:[{color:"red", size:"L",
+toJSON(){return this.size="Large"}}]   
+}
+alert(JSON.stringify(person));
+alert(JSON.stringify(person.shirt));<!-- Ouptut:Large-->
+
+</script>
+</head>
+<body>
+
+</body>			
+
+</html>

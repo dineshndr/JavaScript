@@ -1,0 +1,28 @@
+<!--Transforming objects
+Objects lack many methods that exist for arrays, e.g. map, filter and others.
+
+If we’d like to apply them, then we can use Object.entries followed by Object.fromEntries:
+
+Use Object.entries(obj) to get an array of key/value pairs from obj.
+Use array methods on that array, e.g. map, to transform these key/value pairs.
+Use Object.fromEntries(array) on the resulting array to turn it back into an object-->
+<html>
+<head>
+<title>hello</title>
+<script> 
+let salaries = {
+  "John": 100,
+  "Pete": 300,
+  "Mary": 250
+};
+let sumSalaries = (salaries) =>  alert(salaries["John"]+salaries["Pete"]+salaries["Mary"]);
+ sumSalaries(salaries) ;
+
+
+</script>
+</head>
+<body>
+
+</body>			
+
+</html>

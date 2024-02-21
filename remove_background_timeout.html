@@ -1,0 +1,18 @@
+<html>
+<body>
+
+<script>
+
+let fragment  = new DocumentFragment();
+for (let key =0;key<3;key++) {
+	let li = document.createElement("li");
+	li.innerHTML = "bosedk";
+	fragment.append(li);
+}
+let ul = document.createElement("ul");
+ul.innerHTML = "love";
+ul.append(fragment);
+document.body.append(ul);
+
+</script></body>
+</html>

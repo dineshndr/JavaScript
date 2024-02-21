@@ -1,0 +1,23 @@
+<!--element>element	div > p	Selects all <p> elements where the parent is a <div> element -->
+<html>
+<body>
+<ul>
+  <li>The</li>
+  <li>test</li>
+</ul>
+<ul>
+  <li>has</li>
+  <li>passed</li>
+</ul>
+<script>
+  let elem = document.querySelector('li');
+
+  alert(elem.innerHTML);
+
+let elements = document.querySelectorAll('ul > li:last-child');
+for (let key of elements) {
+  alert(key.innerHTML);
+}
+</script>
+</body>
+</html>
